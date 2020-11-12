@@ -1,0 +1,47 @@
+/proc/[pid]
+adres danych danego procesu
+
+/attr/
+zabezpieczenia
+
+/autogroup
+grupa procesu
+
+/auxv
+informacje interpretera ELF
+
+/cgroup
+controll group
+
+/clear_refs
+5 roznych wartosci mozliwych do zapisania, przez wlasciciela procesu
+
+/cwd
+current working directory
+
+/fd/
+pliki otwarte przez proces
+
+/fdinfo/
+informacje o plikach otwartych przez proces
+
+/io
+io stats
+
+/limits
+limit dostepnych zasobow
+
+/maps
+pamiec i dostepne permisje programu
+
+/stat
+informacje o statusie, wykorzystywane przez ps(1)
+
+/statm
+informacje o uzyciu pamieci
+
+/status
+latwiejsze do rozczytania informacje z stat i statm
+
+/wchan
+miejsce w kernel, gdzie proces spi
