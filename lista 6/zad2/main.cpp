@@ -36,7 +36,7 @@ int main()
         printf("Podaj nazwe pliku lub wpisz w, aby wyjsc\n");
         scanf("%s", nazwaPliku);
          if(nazwaPliku[0]=='w')
-    return 0;
+		   return 0;
 
          desRd=open(nazwaPliku,O_RDONLY,0);
   stat(nazwaPliku,&filestat);
@@ -47,8 +47,9 @@ int main()
          msync(wsk,filestat.st_size,MS_SYNC);
          close(desRd);
          close(desRdWr);
+		 munmap(wsk,filestat.st_size);
        }
     }
-  munmap(wsk,filestat.st_size);
+
   return 0;
 }

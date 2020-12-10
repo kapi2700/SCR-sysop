@@ -25,8 +25,8 @@ int main()
     return 0;
 
          desRd=open(nazwaPliku,O_RDONLY,0);
-  stat(nazwaPliku,&filestat);
-  desRdWr=open("plik_wsp",O_RDWR);
+		 stat(nazwaPliku,&filestat);
+		 desRdWr=open("plik_wsp",O_RDWR);
          truncate("plik_wsp",filestat.st_size);
          wsk=mmap(0,filestat.st_size,PROT_WRITE|PROT_READ,MAP_SHARED,desRdWr,0);
          read(desRd,wsk,filestat.st_size);
