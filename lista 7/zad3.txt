@@ -1,0 +1,7 @@
+W pierwszym programie, argument jest przekazywany poprzez odpowiednie id wątku. Każde id ma przypisane inne dane
+w zmiennej globalnej.
+
+Drugi program przekazuje zmienne za pomocą struktury danych.
+
+W programie trzecim, problemem, było przekazywanie adresu zmiennej, która była wielokrotnie zmieniana w programie
+głównym. W celu naprawienia tego błędu, można przekazać wartość zmiennej zamiast jej adresu.

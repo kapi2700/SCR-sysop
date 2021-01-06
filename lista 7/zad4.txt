@@ -1,0 +1,1 @@
+W celu naprawienia błędu, należy na koniec maina, dodać funkcję pthread_exit(NULL); która poczeka na zakończenie wszystkich wątków.
